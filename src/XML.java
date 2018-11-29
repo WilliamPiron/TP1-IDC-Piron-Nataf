@@ -1,3 +1,5 @@
-public class XML {
+public class XML{
+    public XML(){
 
+    }
 }

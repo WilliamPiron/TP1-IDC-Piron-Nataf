@@ -8,9 +8,9 @@ public class Main {
 
         ArrayList<TauxFertilite> listeTaux = new ArrayList<TauxFertilite>();
 
-        Excel excel = new Excel(pathToExcel);
+        //Excel excel = new Excel(pathToExcel);
 
-        listeTaux = excel.getListeTaux();
+        listeTaux = new Excel(pathToExcel).getListeTaux();
 
         //Taux 1995 - Taux 1985
         displayvalue = listeTaux.get(2).getTaux() - listeTaux.get(0).getTaux();
