@@ -1,7 +1,6 @@
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.File;
 
 
 import javax.xml.parsers.DocumentBuilder;
@@ -30,7 +29,7 @@ public class XML {
 		// Document class.
 		Document document = null;
 		try {
-			document = builder.parse("/Users/arielnataf/Desktop/M2/IDD/Sources-20181129/FRA.xml");
+			document = builder.parse("");
 			document.getDocumentElement().normalize();
 
 			System.out.print("Root element: ");
@@ -43,7 +42,6 @@ public class XML {
 		}
 
 		List<TauxFertilite> tauxFertilites = new ArrayList<>();
-		List<XML_Fields> XMLparser = new ArrayList<>();
 
 		System.out.println(document.getDocumentElement().getNodeName());
 		NodeList nodeList = document.getElementsByTagName("record");
