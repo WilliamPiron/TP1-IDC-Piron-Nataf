@@ -1,8 +1,8 @@
 public class TauxFertilite {
     private int id;
-    private float taux;
+    private double taux;
 
-    public TauxFertilite(int id, float taux){
+    public TauxFertilite(int id, double taux){
         this.id = id;
         this.taux = taux;
     }
@@ -11,7 +11,7 @@ public class TauxFertilite {
         return this.id;
     }
 
-    public float getTaux() {
+    public double getTaux() {
         return taux;
     }
 }
